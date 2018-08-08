@@ -20,7 +20,11 @@ open the spring boot initializr page below and generate a demo project
 
 > https://start.spring.io/
 
+![2 a](https://user-images.githubusercontent.com/1764183/43835338-ede3f96e-9b54-11e8-8856-e2ee3a067447.png)
+
 Extract the zip file and import the project from IntelliJ IDEA IDE   
+
+![2 b](https://user-images.githubusercontent.com/1764183/43835347-f98b9506-9b54-11e8-8f78-f24f41da6b68.png)
 
 ## 3. Update POM for scala support 
 
@@ -67,9 +71,13 @@ Add scala plugin in the plugins sections
 
 In the IDE, create a folder named `scala` under `project > src > main` and mark the folder as source directory by right click, `Marked Directory as`  `Sources Root` 
 
+![4 a](https://user-images.githubusercontent.com/1764183/43835359-033d383e-9b55-11e8-8b34-00571b753b3a.png)
+
 delete `java` Source directory which came by default 
 
 Create a package under `scala` directory called `com.example.springbootscalahello` and create a scala class file called `SpringBootScalaHelloApplication`  
+
+![4 b](https://user-images.githubusercontent.com/1764183/43835360-037577da-9b55-11e8-98c8-cca8a2e16d4c.png)
 
 Open scala file `SpringBootScalaHelloApplication` and copy paste the below code 
 
@@ -95,7 +103,16 @@ object SpringBootScalaHelloApplication extends App {
 
 To build, from IDE, click `Build > Build Project` 
 
+![5 a](https://user-images.githubusercontent.com/1764183/43835361-03adb32a-9b55-11e8-9b6e-1ff46cda8d73.png)
+
+
 To Run, from IDE, click `Run > Run 'SpringBootScalaHelloApplication'`
+
+![5 b](https://user-images.githubusercontent.com/1764183/43835363-03e1be22-9b55-11e8-9c23-fef1e43b467b.png)
+
+See the output 
+
+![5 c](https://user-images.githubusercontent.com/1764183/43835364-042df508-9b55-11e8-9170-f24b2dfa5cd4.png)
 
 ## 6. Package and run Spring boot scala project
 From IDE, right click on project root and click on `Open in terminal`
