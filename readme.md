@@ -27,40 +27,40 @@ Extract the zip file and import the project from IntelliJ IDEA IDE
 Add scala version in the properties section of the POM 
 
 ```xml
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<scala.version>2.12.1</scala.version>
-	</properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <scala.version>2.12.1</scala.version>
+    </properties>
 ```
 
 Add scala dependency in the dependencies section 
 
 ```xml
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-library</artifactId>
-			<version>${scala.version}</version>
-		</dependency>
+    <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>${scala.version}</version>
+    </dependency>
 ```
 
 Add scala plugin in the plugins sections 
 
 ```xml
-			<plugin>
-				<groupId>net.alchim31.maven</groupId>
-				<artifactId>scala-maven-plugin</artifactId>
-				<version>3.1.3</version>
-				<executions>
-					<execution>
-							<goals>
-								<goal>compile</goal>
-								<goal>testCompile</goal>
-							</goals>
-					</execution>
-				</executions>
-			</plugin>
+    <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>3.1.3</version>
+        <executions>
+            <execution>
+                    <goals>
+                        <goal>compile</goal>
+                        <goal>testCompile</goal>
+                    </goals>
+            </execution>
+        </executions>
+    </plugin>
 ```
 
 ## 4. Add Sample scala code 
@@ -105,3 +105,5 @@ run the following commands:
 > mvn compile 
 > mvn package
 > java -jar target\spring-boot-scala-hello-0.0.1-SNAPSHOT.jar
+
+
